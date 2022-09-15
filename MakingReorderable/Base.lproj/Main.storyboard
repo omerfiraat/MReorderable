@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="21t-EN-8mB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SecondStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="MakingReorderable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JvE-kW-O7h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xxh-nq-OLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="180" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-2s-eCJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
+                                                <color key="backgroundColor" name="SpotiGrey"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="265-tt-J1c">
+                                                <rect key="frame" x="0.0" y="360" width="414" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyb-nl-x3U">
+                                                        <rect key="frame" x="0.0" y="6" width="138" height="18"/>
+                                                        <color key="backgroundColor" name="SpotiGrey"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <state key="normal" image="backward" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OO6-G1-Elj">
+                                                        <rect key="frame" x="138" y="4" width="138" height="22"/>
+                                                        <color key="backgroundColor" name="SpotiGrey"/>
+                                                        <state key="normal" image="playpause" catalog="system"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgm-Ba-PcV">
+                                                        <rect key="frame" x="276" y="4" width="138" height="22"/>
+                                                        <color key="backgroundColor" name="SpotiGrey"/>
+                                                        <state key="normal" image="forward" catalog="system"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="SpotiGrey"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Res-jn-JO8"/>
+                                                </constraints>
+                                            </stackView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RmY-Iy-bvX">
+                                                <rect key="frame" x="0.0" y="390" width="414" height="418"/>
+                                                <color key="backgroundColor" name="SpotiGrey"/>
+                                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="sectionIndexBackgroundColor" name="SpotiGrey"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MusicCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicCell" rowHeight="80" id="DVV-9a-W7t" customClass="MusicCell" customModule="MakingReorderable" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DVV-9a-W7t" id="iqw-lZ-Bse">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TLw-2p-wcH">
+                                                                    <rect key="frame" x="10" y="0.0" width="193.5" height="120"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="60" translatesAutoresizingMaskIntoConstraints="NO" id="7lV-t1-CWw">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="30"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </imageView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="etd-sm-iOW">
+                                                                            <rect key="frame" x="130" y="0.0" width="63.5" height="120"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Deneme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sul-qq-bGg">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="63.5" height="105.5"/>
+                                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="316-Ir-FxD">
+                                                                                    <rect key="frame" x="0.0" y="105.5" width="63.5" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" name="SpotiGrey"/>
+                                                        <connections>
+                                                            <outlet property="imgMusic" destination="7lV-t1-CWw" id="Z32-Ou-BoS"/>
+                                                            <outlet property="lblArtist" destination="316-Ir-FxD" id="FVF-F3-cta"/>
+                                                            <outlet property="lblName" destination="sul-qq-bGg" id="v19-nL-I4a"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <sections/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="SpotiGrey"/>
+                                        <constraints>
+                                            <constraint firstItem="265-tt-J1c" firstAttribute="leading" secondItem="xxh-nq-OLS" secondAttribute="leading" id="21q-bD-ylL"/>
+                                            <constraint firstItem="RmY-Iy-bvX" firstAttribute="top" secondItem="265-tt-J1c" secondAttribute="bottom" id="9K0-Jn-o3I"/>
+                                            <constraint firstAttribute="trailing" secondItem="265-tt-J1c" secondAttribute="trailing" id="Ont-wz-O2Y"/>
+                                            <constraint firstItem="265-tt-J1c" firstAttribute="top" secondItem="HIu-2s-eCJ" secondAttribute="bottom" id="kTQ-A1-adQ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="SpotiGrey"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="SpotiGrey"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JvE-kW-O7h" secondAttribute="bottom" id="L4P-KC-jp5"/>
+                            <constraint firstAttribute="trailing" secondItem="JvE-kW-O7h" secondAttribute="trailing" id="cd3-85-Yaa"/>
+                            <constraint firstItem="JvE-kW-O7h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fyr-QO-IyJ"/>
+                            <constraint firstItem="JvE-kW-O7h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zbH-9Q-yQ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jhu-oa-EY7">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="uhc-7J-8jU">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapSort" destination="BYZ-38-t0r" id="Mp6-SV-xMb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tbvMusic" destination="RmY-Iy-bvX" id="Kmy-DD-wXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="118.52678571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mur-LC-kLw">
+            <objects>
+                <viewController id="21t-EN-8mB" customClass="OBViewController" customModule="MakingReorderable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ha7-aN-hFc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dpK-cQ-XdH"/>
+                    </view>
+                    <connections>
+                        <segue destination="r8c-M1-Gyf" kind="presentation" identifier="ShowMusicList" modalPresentationStyle="fullScreen" id="BkM-iz-2Su"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHq-cL-ivc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-812" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q78-yt-YLa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r8c-M1-Gyf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="VA0-cq-K8l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="SpotiGrey"/>
+                        <color key="barTintColor" name="SpotiGrey"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w0T-05-tqF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8B6-0C-mz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="180" width="180" height="180"/>
+        <image name="60" width="60" height="60"/>
+        <image name="backward" catalog="system" width="64" height="38"/>
+        <image name="forward" catalog="system" width="64" height="38"/>
+        <image name="playpause" catalog="system" width="64" height="40"/>
+        <namedColor name="SpotiGrey">
+            <color red="0.048999998718500137" green="0.048999998718500137" blue="0.048999998718500137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

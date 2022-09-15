@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A71CF02562653A00F183CD /* lottieAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 00A71CEF2562653A00F183CD /* lottieAnimation.json */; };
+		00E07688255D9BAB006E5092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E07687255D9BAB006E5092 /* AppDelegate.swift */; };
+		00E0768A255D9BAB006E5092 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E07689255D9BAB006E5092 /* SceneDelegate.swift */; };
+		00E0768C255D9BAB006E5092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0768B255D9BAB006E5092 /* ViewController.swift */; };
+		00E0768F255D9BAB006E5092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E0768D255D9BAB006E5092 /* Main.storyboard */; };
+		00E07692255D9BAB006E5092 /* MakingReorderable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00E07690255D9BAB006E5092 /* MakingReorderable.xcdatamodeld */; };
+		00E076A1255DA370006E5092 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E076A0255DA370006E5092 /* MusicCell.swift */; };
+		00E076A3255DA805006E5092 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E076A2255DA805006E5092 /* UIViewExtensions.swift */; };
+		00EA865A2562B1B30032CD53 /* OBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EA86582562B1B30032CD53 /* OBViewController.swift */; };
+		CF1B4414C0F96C65918D3B4B /* Pods_MakingReorderable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379E66BAC5FC8A924EBF5C30 /* Pods_MakingReorderable.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		004B45E12569029A0087770C /* MakingReorderable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MakingReorderable.entitlements; sourceTree = "<group>"; };
+		00A71CEF2562653A00F183CD /* lottieAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieAnimation.json; sourceTree = "<group>"; };
+		00E07684255D9BAB006E5092 /* MakingReorderable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakingReorderable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E07687255D9BAB006E5092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00E07689255D9BAB006E5092 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00E0768B255D9BAB006E5092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00E0768E255D9BAB006E5092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00E07691255D9BAB006E5092 /* MakingReorderable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakingReorderable.xcdatamodel; sourceTree = "<group>"; };
+		00E07698255D9BAC006E5092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E076A0255DA370006E5092 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		00E076A2255DA805006E5092 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		00EA86582562B1B30032CD53 /* OBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBViewController.swift; sourceTree = "<group>"; };
+		379E66BAC5FC8A924EBF5C30 /* Pods_MakingReorderable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakingReorderable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43B67DC4F57D90E2BE1A768 /* Pods-MakingReorderable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakingReorderable.debug.xcconfig"; path = "Target Support Files/Pods-MakingReorderable/Pods-MakingReorderable.debug.xcconfig"; sourceTree = "<group>"; };
+		F346C7E2F7C73073ABC67F3B /* Pods-MakingReorderable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakingReorderable.release.xcconfig"; path = "Target Support Files/Pods-MakingReorderable/Pods-MakingReorderable.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E07681255D9BAB006E5092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1B4414C0F96C65918D3B4B /* Pods_MakingReorderable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00A71CEE2562652500F183CD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				00A71CEF2562653A00F183CD /* lottieAnimation.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		00E0767B255D9BAB006E5092 = {
+			isa = PBXGroup;
+			children = (
+				00E07686255D9BAB006E5092 /* MakingReorderable */,
+				00E07685255D9BAB006E5092 /* Products */,
+				25BFC9B8FA72628D7056CB08 /* Pods */,
+				3B08AE9A9C6B10F410C4DB64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00E07685255D9BAB006E5092 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00E07684255D9BAB006E5092 /* MakingReorderable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E07686255D9BAB006E5092 /* MakingReorderable */ = {
+			isa = PBXGroup;
+			children = (
+				004B45E12569029A0087770C /* MakingReorderable.entitlements */,
+				00E07687255D9BAB006E5092 /* AppDelegate.swift */,
+				00E07689255D9BAB006E5092 /* SceneDelegate.swift */,
+				00EA86582562B1B30032CD53 /* OBViewController.swift */,
+				00E0768B255D9BAB006E5092 /* ViewController.swift */,
+				00E076A0255DA370006E5092 /* MusicCell.swift */,
+				00A71CEE2562652500F183CD /* Assets */,
+				00E076A2255DA805006E5092 /* UIViewExtensions.swift */,
+				00E0768D255D9BAB006E5092 /* Main.storyboard */,
+				00E07698255D9BAC006E5092 /* Info.plist */,
+				00E07690255D9BAB006E5092 /* MakingReorderable.xcdatamodeld */,
+			);
+			path = MakingReorderable;
+			sourceTree = "<group>";
+		};
+		25BFC9B8FA72628D7056CB08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E43B67DC4F57D90E2BE1A768 /* Pods-MakingReorderable.debug.xcconfig */,
+				F346C7E2F7C73073ABC67F3B /* Pods-MakingReorderable.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3B08AE9A9C6B10F410C4DB64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379E66BAC5FC8A924EBF5C30 /* Pods_MakingReorderable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E07683255D9BAB006E5092 /* MakingReorderable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E0769B255D9BAC006E5092 /* Build configuration list for PBXNativeTarget "MakingReorderable" */;
+			buildPhases = (
+				55E86E6852217A2DBD9E4CB1 /* [CP] Check Pods Manifest.lock */,
+				00E07680255D9BAB006E5092 /* Sources */,
+				00E07681255D9BAB006E5092 /* Frameworks */,
+				00E07682255D9BAB006E5092 /* Resources */,
+				FA73640A73E8F4E5658202DF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakingReorderable;
+			productName = MakingReorderable;
+			productReference = 00E07684255D9BAB006E5092 /* MakingReorderable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00E0767C255D9BAB006E5092 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Omer Firat";
+				TargetAttributes = {
+					00E07683255D9BAB006E5092 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 00E0767F255D9BAB006E5092 /* Build configuration list for PBXProject "MakingReorderable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00E0767B255D9BAB006E5092;
+			productRefGroup = 00E07685255D9BAB006E5092 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00E07683255D9BAB006E5092 /* MakingReorderable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E07682255D9BAB006E5092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A71CF02562653A00F183CD /* lottieAnimation.json in Resources */,
+				00E0768F255D9BAB006E5092 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55E86E6852217A2DBD9E4CB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakingReorderable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA73640A73E8F4E5658202DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakingReorderable/Pods-MakingReorderable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakingReorderable/Pods-MakingReorderable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MakingReorderable/Pods-MakingReorderable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E07680255D9BAB006E5092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E076A1255DA370006E5092 /* MusicCell.swift in Sources */,
+				00E07692255D9BAB006E5092 /* MakingReorderable.xcdatamodeld in Sources */,
+				00EA865A2562B1B30032CD53 /* OBViewController.swift in Sources */,
+				00E0768C255D9BAB006E5092 /* ViewController.swift in Sources */,
+				00E07688255D9BAB006E5092 /* AppDelegate.swift in Sources */,
+				00E076A3255DA805006E5092 /* UIViewExtensions.swift in Sources */,
+				00E0768A255D9BAB006E5092 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00E0768D255D9BAB006E5092 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00E0768E255D9BAB006E5092 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E07699255D9BAC006E5092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00E0769A255D9BAC006E5092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00E0769C255D9BAC006E5092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43B67DC4F57D90E2BE1A768 /* Pods-MakingReorderable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MakingReorderable/MakingReorderable.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DTSAAQTA2J;
+				INFOPLIST_FILE = MakingReorderable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frt.MakingReorderable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00E0769D255D9BAC006E5092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F346C7E2F7C73073ABC67F3B /* Pods-MakingReorderable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MakingReorderable/MakingReorderable.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DTSAAQTA2J;
+				INFOPLIST_FILE = MakingReorderable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frt.MakingReorderable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E0767F255D9BAB006E5092 /* Build configuration list for PBXProject "MakingReorderable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E07699255D9BAC006E5092 /* Debug */,
+				00E0769A255D9BAC006E5092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E0769B255D9BAC006E5092 /* Build configuration list for PBXNativeTarget "MakingReorderable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E0769C255D9BAC006E5092 /* Debug */,
+				00E0769D255D9BAC006E5092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00E07690255D9BAB006E5092 /* MakingReorderable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00E07691255D9BAB006E5092 /* MakingReorderable.xcdatamodel */,
+			);
+			currentVersion = 00E07691255D9BAB006E5092 /* MakingReorderable.xcdatamodel */;
+			path = MakingReorderable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00E0767C255D9BAB006E5092 /* Project object */;
+}
